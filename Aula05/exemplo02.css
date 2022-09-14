@@ -1,0 +1,18 @@
+#caixa {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+
+.caixa2 {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    background-color: palegreen;
+    border-radius: 100px;
+}
