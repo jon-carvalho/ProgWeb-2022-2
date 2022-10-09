@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soma de valores</title>
+<script>
+    window.onload = function(){
+        let btn = document.getElementById("botao");
+        btn.onclick = function (){
+            let diaNasc = document.getElementById("diaNasc").value;
+            let mesNasc = document.getElementById("mesNasc").value;
+            let anoNasc = document.getElementById("anoNasc").value;
+
+            let dN = parseFloat(diaNasc)
+            let mN = parseFloat(mesNasc)
+            let aN = parseFloat(anoNasc)
+
+            let diaAtual = document.getElementById("diaAtual").value;
+            let mesAtual = document.getElementById("mesAtual").value;
+            let anoAtual = document.getElementById("anoAtual").value;
+
+            let dA = parseFloat(diaAtual)
+            let mA = parseFloat(mesAtual)
+            let aA = parseFloat(anoAtual)
+
+
+            let nascEmDias = dN + (mN * 30) + (aN * 365)
+            let atualEmDias = dA + (mA * 30) + (aA * 365)
+
+            //alert("A soma é " + (va+vb) );
+            document.getElementById("res").value = "Idade em Dias: " + ( parseFloat(atualEmDias) - parseFloat(nascEmDias));
+        }
+    }
+</script>
+</head>
+
+<body>
+<br/>
+	<h2>Soma de valores</h2>
+    Dia: <input type="text" id="diaNasc" value="" /> <br/>
+    Mês: <input type="text" id="mesNasc" value="" /> <br/>
+    Ano: <input type="text" id="anoNasc" value="" /> <br/>
+
+    Dia: <input type="text" id="diaAtual" value="" /> <br/>
+        Mês: <input type="text" id="mesAtual" value="" /> <br/>
+        Ano: <input type="text" id="anoAtual" value="" /> <br/>
+
+        Resultado: <input type="text" id="res" value="" disabled/> <br/>
+        <input type="button" id="botao" value="Executar" /> <br/>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soma de valores</title>
+<script>
+    window.onload = function(){
+        let btn = document.getElementById("botao");
+        btn.onclick = function (){
+
+            const data = new Date();
+            let hora = data.getHours();
+
+            let nome = document.getElementById("nome").value;
+
+            
+            if(hora >= 6 && hora <= 11){
+                document.getElementById("res").value = "Bom dia " + nome ;
+            } else if(hora >= 12 && hora <= 17){
+                document.getElementById("res").value = "Boa tarde " + nome ;
+            } else if(hora >= 18 && hora <= 23){
+                document.getElementById("res").value = "Boa noite " + nome ;
+            } else {
+                document.getElementById("res").value = "Boa madrugada " + nome ;
+            }
+              }
+    }
+</script>
+</head>
+
+<body>
+<br/>
+	<h2>Soma de valores</h2>
+    Digite seu nome: <input type="text" id="nome" value="" /> <br/>
+
+        Resultado: <input type="text" id="res" value="" disabled/> <br/>
+        <input type="button" id="botao" value="Executar" /> <br/>
+</body>
+</html>
