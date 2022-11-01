@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exemplo04.css">
+    <script src="./exemplo04.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="container">
+        <h2>Cadastro de Faltas</h2>
+
+        <span>Nome:</span>
+        <input type="text" name="" id="nome">
+
+        <br><br>
+
+        <span>RGM:</span>
+        <input type="text" name="" id="rgm">
+
+        <br><br>
+
+        <span>Faltas:</span>
+        <input type="text" name="" id="faltas">
+
+        <br><br>
+        <input type="button" value="botaoteste" id="botaoteste" onclick="criarBase()">
+        <br><br>
+        <input type="button" value="Gerar Tabela" id="gerartabela" onclick="criarTabela()">
+
+        
+
+    </div>
+
+    <br><br><br>
+
+    <table class="tabela">
+        <thead>
+          <tr>
+            <th>NOME</th>
+            <th>RGM</th>
+            <th>FALTAS</th>
+        </thead>
+        <tbody id="corpotabela">
+    
+        </tbody>
+      </table>
+
+</body>
+
+</html>

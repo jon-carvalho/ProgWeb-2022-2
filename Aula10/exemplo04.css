@@ -1,0 +1,28 @@
+#container {
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+input[type=button], span, h2 {
+    margin-left: 30px;
+}
+
+.tabela {
+    margin: auto;
+}
+
+th {
+    background-color: beige;
+    width: 200px;
+    border: 1px solid black;
+}
+
+td {
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+}
