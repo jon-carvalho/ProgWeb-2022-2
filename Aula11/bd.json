@@ -1,0 +1,42 @@
+{
+    "alunos": [
+      {
+        "nome": "Joao",
+        "rgm": 299,
+        "avaliacaoParcial": 2,
+        "exercicio": 1,
+        "avaliacaoRegimental": 2,
+        "img": "./imgs/joao"
+      },
+      {
+        "nome": "Maria",
+        "rgm": 123,
+        "avaliacaoParcial": 2,
+        "exercicio": 2,
+        "avaliacaoRegimental": 5,
+        "img": "./imgs/maria"
+      },
+      {
+        "nome": "Julia",
+        "rgm": 567,
+        "avaliacaoParcial": 0,
+        "exercicio": 1,
+        "avaliacaoRegimental": 0,
+        "img": "./imgs/julia"
+      },{
+        "nome": "Marcos",
+        "rgm": 980,
+        "avaliacaoParcial": 3,
+        "exercicio": 1,
+        "avaliacaoRegimental": 1,
+        "img": "./imgs/marcos"
+      },{
+        "nome": "Carla",
+        "rgm": 980,
+        "avaliacaoParcial": 3,
+        "exercicio": 1,
+        "avaliacaoRegimental": 1,
+        "img": "./imgs/carla"
+      }
+    ]
+  }
